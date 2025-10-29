@@ -1,25 +1,28 @@
-<img src="src/youoryou.jpg" width="264">
+
+<img src="src/youoryou.jpg" width="340">
 
 # Author Identification
 
 ## Introduction:
 
 **Goal of this task:**
-Implement, optimize, and evaluate a tool for author identification.
-→ Given two texts, decide whether the author is the same.
+Implement, optimize, and evaluate a tool for author identification.  
+→ Given two texts, decide whether the author is the same.  
 **Approach:** Analyze writing styles and other attributes of texts.
 
 ---
 
 ## Motivation:
 
-Working with large datasets of anonymous text (e.g., the internet) makes author identification a very important task, crucial for fields such as forensics, security, and marketing.
+Working with large datasets of anonymous text (e.g., the internet) makes author identification a   
+very important task, crucial for fields such as forensics, security, and marketing.
 
 ---
 
 ## Classifier:
 
-Choices include Linear Regression (Maximum Entropy) and various Support Vector Machines techniques. Different classifiers can have varying accuracy depending on the task and data.
+Choices include Linear Regression (Maximum Entropy) and various Support Vector Machines techniques.  
+Different classifiers can have varying accuracy depending on the task and data.
 
 **Best classifier for this project:** LinearSVM
 
@@ -58,7 +61,8 @@ Choices include Linear Regression (Maximum Entropy) and various Support Vector M
 
 ## Evaluation:
 
-Given very few examples of tagged data, evaluation was done manually for the development data (size: 10-20 classification tasks). Training data and development data were always varied, leading to a manual application of k-fold evaluation.
+Given very few examples of tagged data, evaluation was done manually for the development data (size: 10-20 classification tasks).  
+Training data and development data were always varied, leading to a manual application of k-fold evaluation.
 
 **Results:** Average F1-Score over 80% (depending on fold size).
 
@@ -66,8 +70,7 @@ Given very few examples of tagged data, evaluation was done manually for the dev
 
 ## Usage of Program (Manual):
 
-The program uses all 100 text pairs to train classifiers.
-Directories of the two text files are input through the console.
+The program uses all 100 text pairs to train classifiers. Directories of the two text files are input through the console.  
 Prediction is saved in the text document `prediction.txt` ("Y" means same author, "N" means different authors).
 
 ---
